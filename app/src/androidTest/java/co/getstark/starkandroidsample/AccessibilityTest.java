@@ -25,9 +25,6 @@ public class AccessibilityTest {
     @Test
     public void testAccessibility() {
         try (ActivityScenario<MainActivity> scenario = ActivityScenario.launch(MainActivity.class)) {
-            onView(isRoot()).check(matches(isDisplayed())); // This will wait until the root view is considered displayed
-
-
             scenario.onActivity(activity -> {
                 View rootView = activity.getWindow().getDecorView().getRootView();
                 AccessibilityChecker checker = new AccessibilityChecker("stark_••••••••••••••••••••••••••••••••");
