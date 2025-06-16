@@ -35,7 +35,7 @@ android {
 
 dependencies {
 
-    coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.1.4")
+    coreLibraryDesugaring(libs.desugar.jdk.libs)
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.constraintlayout)
@@ -46,5 +46,5 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
-    androidTestImplementation("co.getstark.accessibility:stark-android:0.0.1")
+    androidTestImplementation(libs.stark.android)
 }
