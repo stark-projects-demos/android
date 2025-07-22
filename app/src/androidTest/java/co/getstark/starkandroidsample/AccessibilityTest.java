@@ -13,7 +13,7 @@ import androidx.test.ext.junit.runners.AndroidJUnit4;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import co.getstark.accessibility.AccessibilityChecker;
+import co.getstark.accessibility.instrumentation.AccessibilityChecker;
 
 /**
  * Instrumented test, which will execute on an Android device.
