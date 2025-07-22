@@ -1,10 +1,11 @@
 plugins {
     alias(libs.plugins.android.application)
+    id("co.getstark.accessibility") version "0.0.1"
 }
 
 android {
     namespace = "co.getstark.starkandroidsample"
-    compileSdk = 35
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "co.getstark.starkandroidsample"
@@ -25,17 +26,17 @@ android {
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
-
-        isCoreLibraryDesugaringEnabled = true
     }
     buildFeatures {
         viewBinding = true
     }
 }
 
-dependencies {
+stark {
+    starkToken = "stark_••••••••••••••••••••••••••••••••"
+}
 
-    coreLibraryDesugaring(libs.desugar.jdk.libs)
+dependencies {
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.constraintlayout)
@@ -46,5 +47,4 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
-    androidTestImplementation(libs.stark.android)
 }
