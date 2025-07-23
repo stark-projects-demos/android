@@ -5,5 +5,5 @@
     android:layout_marginTop="72dp"
     android:gravity="center"
     android:padding="16dp"
-    android:text="Demo - Coming Soon\n\nDemo controls with accessibility issues will appear here."
+    android:text="Language checks\n\nThese checks can't be shown easily with UI. Instead you'll find them in files like res/values/strings.xml and res/xml files missing"
     android:textSize="18sp" />
