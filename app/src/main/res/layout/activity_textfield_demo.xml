@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text="This screen demonstrates common text field accessibility issues."
+            android:textSize="16sp" />
+
+        <!-- Text field with no label -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="1. Text field with no label:"
+            android:textStyle="bold" />
+        
+        <EditText
+            android:id="@+id/unlabeled_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" />
+
+        <!-- Text field with placeholder as label -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="2. Text field using placeholder as label:"
+            android:textStyle="bold" />
+        
+        <EditText
+            android:id="@+id/placeholder_only_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="Enter your email address" />
+
+        <!-- Required field without indication -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="3. Required field (not clearly marked):"
+            android:textStyle="bold" />
+        
+        <EditText
+            android:id="@+id/required_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="Password" />
+
+        <!-- Field with error state but no announcement -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="4. Field with error (no error announcement):"
+            android:textStyle="bold" />
+        
+        <EditText
+            android:id="@+id/error_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/holo_red_light"
+            android:hint="Invalid input"
+            android:text="invalid@email" />
+
+        <!-- Password field without content description -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="5. Password field (no input type announcement):"
+            android:textStyle="bold" />
+        
+        <EditText
+            android:id="@+id/password_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:inputType="textPassword"
+            android:hint="Secret password" />
+
+    </LinearLayout>
+
+</ScrollView>
