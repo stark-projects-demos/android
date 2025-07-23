@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_marginTop="72dp"
-    android:gravity="center"
-    android:padding="16dp"
-    android:text="Demo - Coming Soon\n\nDemo controls with accessibility issues will appear here."
-    android:textSize="18sp" />
+    android:layout_height="match_parent">
+
+    <VideoView
+        android:id="@+id/video_player"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:padding="48dp"
+        android:layout_marginTop="64dp" />
+
+</LinearLayout>
