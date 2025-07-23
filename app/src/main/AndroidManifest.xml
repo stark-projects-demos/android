@@ -41,50 +41,6 @@
             android:name=".demos.CheckboxDemoActivity"
             android:label="Checkbox Demo"
             android:parentActivityName=".MainActivity" />
-        <activity
-            android:name=".demos.RadioButtonDemoActivity"
-            android:label="Radio Button Demo"
-            android:parentActivityName=".MainActivity" />
-        <activity
-            android:name=".demos.SwitchDemoActivity"
-            android:label="Switch Demo"
-            android:parentActivityName=".MainActivity" />
-        <activity
-            android:name=".demos.SliderDemoActivity"
-            android:label="Slider Demo"
-            android:parentActivityName=".MainActivity" />
-        <activity
-            android:name=".demos.ProgressBarDemoActivity"
-            android:label="Progress Bar Demo"
-            android:parentActivityName=".MainActivity" />
-        <activity
-            android:name=".demos.SpinnerDemoActivity"
-            android:label="Spinner Demo"
-            android:parentActivityName=".MainActivity" />
-        <activity
-            android:name=".demos.ListViewDemoActivity"
-            android:label="List View Demo"
-            android:parentActivityName=".MainActivity" />
-        <activity
-            android:name=".demos.TabLayoutDemoActivity"
-            android:label="Tab Layout Demo"
-            android:parentActivityName=".MainActivity" />
-        <activity
-            android:name=".demos.DialogDemoActivity"
-            android:label="Dialog Demo"
-            android:parentActivityName=".MainActivity" />
-        <activity
-            android:name=".demos.ToastDemoActivity"
-            android:label="Toast Demo"
-            android:parentActivityName=".MainActivity" />
-        <activity
-            android:name=".demos.WebViewDemoActivity"
-            android:label="WebView Demo"
-            android:parentActivityName=".MainActivity" />
-        <activity
-            android:name=".demos.VideoPlayerDemoActivity"
-            android:label="Video Player Demo"
-            android:parentActivityName=".MainActivity" />
     </application>
 
 </manifest>
