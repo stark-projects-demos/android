@@ -1,9 +1,120 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginTop="72dp"
-    android:gravity="center"
-    android:padding="16dp"
-    android:text="Demo - Coming Soon\n\nDemo controls with accessibility issues will appear here."
-    android:textSize="18sp" />
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Heading missing accessibilityHeading attribute -->
+    <TextView
+        android:id="@+id/section_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:textStyle="bold"
+        android:textSize="18sp" />
+
+    <!-- Empty table -->
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </TableLayout>
+
+    <!-- Table missing content description and headers -->
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="John" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Doe" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="Employee table">
+
+        <TableRow>
+            <!-- Table header missing accessibilityHeading -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Age"
+                android:textStyle="bold"
+                android:accessibilityHeading="true" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="John Doe"
+                android:contentDescription="John Doe, Name column, Employee row"/>
+            <!-- Table cell missing contentDescription that associates it with row and column headers -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30" />
+        </TableRow>
+
+        <!-- Empty table row -->
+        <TableRow>
+        </TableRow>
+
+        <TableRow>
+            <!-- Table cell missing content -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Valid Content" />
+        </TableRow>
+
+    </TableLayout>
+
+    <!-- GridLayout missing structure and row/col count -->
+    <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cell 1" />
+
+    </GridLayout>
+
+    <!-- Sortable table header missing state -->
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="Employee table">
+
+        <TableRow>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:contentDescription="Name column header"
+                android:onClick="sortByName" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
