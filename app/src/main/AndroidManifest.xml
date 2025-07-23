@@ -26,20 +26,56 @@
         
         <!-- Demo Activities -->
         <activity
-            android:name=".demos.ButtonDemoActivity"
-            android:label="Button Demo"
+            android:name=".demos.TeamSyncDemoActivity"
+            android:label="TeamSync App"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".demos.TextFieldDemoActivity"
-            android:label="Text Field Demo"
+            android:name=".demos.UIControlsDemoActivity"
+            android:label="UI Controls"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".demos.ImageDemoActivity"
-            android:label="Image Demo"
+            android:name=".demos.NotificationsDemoActivity"
+            android:label="Notifications"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".demos.CheckboxDemoActivity"
-            android:label="Checkbox Demo"
+            android:name=".demos.CustomElementsDemoActivity"
+            android:label="Custom Elements"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".demos.FormsDemoActivity"
+            android:label="Form Labels and Validation Demo"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".demos.NavigationDemoActivity"
+            android:label="Navigation"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".demos.DeviceOrientationDemoActivity"
+            android:label="Device Orientation"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".demos.SemanticsDemoActivity"
+            android:label="Semantic Structure and Meaning"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".demos.ColorContrastDemoActivity"
+            android:label="Color and Contrast"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".demos.AudioVideoDemoActivity"
+            android:label="Audio and Video"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".demos.TextContentDemoActivity"
+            android:label="Text Content"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".demos.ImagesDemoActivity"
+            android:label="Images"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".demos.MiscDemoActivity"
+            android:label="Miscellaneous"
             android:parentActivityName=".MainActivity" />
     </application>
 

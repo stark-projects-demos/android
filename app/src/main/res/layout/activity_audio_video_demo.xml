@@ -5,5 +5,5 @@
     android:layout_marginTop="72dp"
     android:gravity="center"
     android:padding="16dp"
-    android:text="Image Demo - Coming Soon\n\nThis demo will show images with missing alt text and poor accessibility descriptions."
+    android:text="Demo - Coming Soon\n\nDemo controls with accessibility issues will appear here."
     android:textSize="18sp" />
