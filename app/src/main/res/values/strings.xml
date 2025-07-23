@@ -1,8 +1,11 @@
 <resources>
-    <string name="app_name">Stark Android Sample</string>
+    <string name="app_name">Stark Android Demo</string>
+    <string name="main_title">Accessibility Demo App</string>
+    <string name="main_subtitle">Select a demo to explore accessibility issues</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
     <string name="button_ok">OK</string>
     <string name="button_cancel">Cancel</string>
+    <string name="back_button">Back to Demo List</string>
 </resources>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="72dp"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text="This screen demonstrates common button accessibility issues. Try using TalkBack to navigate these buttons and notice the problems."
+            android:textSize="16sp" />
+
+        <!-- Section 1: Missing Accessibility Information -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="1. MISSING ACCESSIBILITY INFORMATION"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@android:color/holo_red_dark" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Button with no accessibility text:"
+            android:textStyle="bold" />
+        
+        <Button
+            android:id="@+id/invisible_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/holo_blue_light"
+            android:text="?" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Icon-only button (no content description):"
+            android:textStyle="bold" />
+        
+        <Button
+            android:id="@+id/icon_only_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:drawable/ic_delete" />
+
+        <!-- Section 2: Visual Issues -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="2. VISUAL ACCESSIBILITY ISSUES"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@android:color/holo_red_dark" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Button with poor color contrast:"
+            android:textStyle="bold" />
+        
+        <Button
+            android:id="@+id/low_contrast_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="#EEEEEE"
+            android:text="Hard to Read"
+            android:textColor="#CCCCCC" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Button with touch target too small (less than 48dp):"
+            android:textStyle="bold" />
+        
+        <Button
+            android:id="@+id/tiny_button"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/holo_red_light"
+            android:text="X"
+            android:textSize="8sp" />
+
+        <!-- Section 3: State Issues -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="3. STATE AND CONTEXT ISSUES"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@android:color/holo_red_dark" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Disabled button (no explanation why it's disabled):"
+            android:textStyle="bold" />
+        
+        <Button
+            android:id="@+id/disabled_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Submit Form" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Button with misleading text (says 'Continue' but actually cancels):"
+            android:textStyle="bold" />
+        
+        <Button
+            android:id="@+id/misleading_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/holo_green_light"
+            android:text="Continue"
+            android:textColor="@android:color/black" />
+
+        <!-- Section 4: Focus Issues -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="4. FOCUS AND NAVIGATION ISSUES"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@android:color/holo_red_dark" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Button group without proper focus order:"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="Third"
+                android:nextFocusRight="@id/button_1" />
+
+            <Button
+                android:id="@+id/button_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="First"
+                android:nextFocusRight="@id/button_2" />
+
+            <Button
+                android:id="@+id/button_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Second"
+                android:nextFocusRight="@id/button_3" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="32dp"
+            android:text="💡 TIP: Enable TalkBack in Settings > Accessibility > TalkBack to experience these accessibility issues firsthand."
+            android:background="#FFF3E0"
+            android:padding="16dp"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</ScrollView>
