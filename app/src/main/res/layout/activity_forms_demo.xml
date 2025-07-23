@@ -1,9 +1,212 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginTop="72dp"
-    android:gravity="center"
-    android:padding="16dp"
-    android:text="Demo - Coming Soon\n\nDemo controls with accessibility issues will appear here."
-    android:textSize="18sp" />
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- EditText without a visible label -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:visibility="gone" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- EditText with an invisible label (contentDescription for accessibility) -->
+    <EditText
+        android:id="@+id/editTextInvisibleLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter text here"
+        android:contentDescription="Your descriptive label for screen readers"
+        android:inputType="text"
+        android:layout_marginTop="16dp"/>
+
+    <!-- EditText with a proper, visible label using TextInputLayout -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textFieldWithLabelLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Your Visible Label">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextWithLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Text field without a hint -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Text field with contentDescription but no visible, programmatically associated label -->
+    <EditText
+        android:id="@+id/username2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="Enter your username" />
+
+    <!-- EditText missing input type -->
+    <EditText xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter text" />
+
+    <!-- Checkbox group missing label; checkbox missing label; checkbox missing state -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Burgers" />
+
+    </LinearLayout>
+
+    <!-- Checkbox group missing legend text; duplicate checkbox labels -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:contentDescription="Select options">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option"
+            android:checked="false" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option"
+            android:checked="false" />
+
+    </LinearLayout>
+
+    <!-- RadioGroup missing label; RadioGroup has no default checked option; RadioButton missing label; RadioButton missing state -->
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Credit Card" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false" />
+
+    </RadioGroup>
+
+    <!-- Empty RadioGroup -->
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="Select payment method"
+        tools:ignore="UselessLeaf">
+
+    </RadioGroup>
+
+    <!-- RadioButtons with duplicate labels -->
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Credit Card"
+            android:checked="true" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Credit Card"
+            android:checked="false" />
+
+    </RadioGroup>
+
+    <!-- RadioButton not in group -->
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Credit Card"
+        android:checked="false" />
+
+    <!-- Spinner/picker control not programmatically associated with its visible label -->
+    <Spinner
+        android:id="@+id/country"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/countries" />
+
+    <!-- Spinner/picker not programmatically associated with a visible label -->
+    <Spinner
+        android:id="@+id/country2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="Select your country"
+        android:entries="@array/countries" />
+
+    <!-- Email field missing context -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact"
+        android:labelFor="@+id/contact" />
+
+    <EditText
+        android:id="@+id/contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress" />
+
+    <!-- Number field missing context -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Value"
+        android:labelFor="@+id/value" />
+
+    <EditText
+        android:id="@+id/value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number" />
+
+    <!-- Password field with visible label -->
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:inputType="textPassword"
+        android:hint="Enter your password"
+        tools:ignore="TextFieldMissingVisibleLabelAssociation" />
+
+</LinearLayout>
