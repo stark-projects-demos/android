@@ -15,6 +15,7 @@ import co.getstark.starkandroidsample.demos.ColorContrastDemoActivity;
 import co.getstark.starkandroidsample.demos.DeviceOrientationDemoActivity;
 import co.getstark.starkandroidsample.demos.FormsDemoActivity;
 import co.getstark.starkandroidsample.demos.ImagesDemoActivity;
+import co.getstark.starkandroidsample.demos.MenusDemoActivity;
 import co.getstark.starkandroidsample.demos.MiscDemoActivity;
 import co.getstark.starkandroidsample.demos.NavigationDemoActivity;
 import co.getstark.starkandroidsample.demos.SemanticsDemoActivity;
@@ -54,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
         demoItems.add(new DemoItem("Custom Elements", "Various custom elements", CustomElementsDemoActivity.class));
         demoItems.add(new DemoItem("Form Labels and Validation", "Forms and their presentation", FormsDemoActivity.class));
         demoItems.add(new DemoItem("Navigation", "User navigation controls", NavigationDemoActivity.class));
+        demoItems.add(new DemoItem("Menus", "User menus", MenusDemoActivity.class));
         demoItems.add(new DemoItem("Device Orientation", "", DeviceOrientationDemoActivity.class));
         demoItems.add(new DemoItem("Semantic Structure and Meaning", "", SemanticsDemoActivity.class));
         demoItems.add(new DemoItem("Color and Contrast", "Accessibility of colors", ColorContrastDemoActivity.class));
