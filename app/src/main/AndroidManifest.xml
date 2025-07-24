@@ -77,6 +77,10 @@
             android:name=".demos.MiscDemoActivity"
             android:label="Miscellaneous"
             android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".demos.MenusDemoActivity"
+            android:label="Menus"
+            android:parentActivityName=".MainActivity" />
     </application>
 
 </manifest>
