@@ -15,7 +15,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="24dp"
-            android:text="This screen demonstrates common button accessibility issues. Try using TalkBack to navigate these buttons and notice the problems."
+            android:text="@string/button_accessibility_description"
             android:textSize="16sp" />
 
         <!-- Section 1: Missing Accessibility Information -->
@@ -23,7 +23,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="1. MISSING ACCESSIBILITY INFORMATION"
+            android:text="@string/missing_accessibility_info"
             android:textStyle="bold"
             android:textSize="18sp"
             android:textColor="@android:color/holo_red_dark" />
@@ -32,7 +32,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="Button with no accessibility text:"
+            android:text="@string/button_no_accessibility_text"
             android:textStyle="bold" />
         
         <Button
@@ -41,13 +41,13 @@
             android:layout_height="50dp"
             android:layout_marginTop="8dp"
             android:background="@android:color/holo_blue_light"
-            android:text="?" />
+            android:text="@string/question_mark" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="Icon-only button (no content description):"
+            android:text="@string/icon_only_button_no_desc"
             android:textStyle="bold" />
         
         <Button
@@ -62,7 +62,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
-            android:text="2. VISUAL ACCESSIBILITY ISSUES"
+            android:text="@string/visual_accessibility_issues"
             android:textStyle="bold"
             android:textSize="18sp"
             android:textColor="@android:color/holo_red_dark" />
@@ -71,7 +71,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="Button with poor color contrast:"
+            android:text="@string/button_poor_contrast"
             android:textStyle="bold" />
         
         <Button
@@ -80,14 +80,14 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:background="#EEEEEE"
-            android:text="Hard to Read"
+            android:text="@string/hard_to_read"
             android:textColor="#CCCCCC" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="Button with touch target too small (less than 48dp):"
+            android:text="@string/button_touch_target_small"
             android:textStyle="bold" />
         
         <Button

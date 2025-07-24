@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Menu button missing label -->
+    <ImageButton xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/menu_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:minWidth="48dp"
+        android:src="@drawable/ic_notifications_black_24dp" />
+
+    <!-- Menu button missing action indication -->
+    <ImageButton xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/overflow_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_home_black_24dp"
+        android:contentDescription="@string/content_desc_overflow" />
+
+    <!-- Menu button with unclear purpose -->
+    <ImageButton xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/more_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_home_black_24dp"
+        android:contentDescription="@string/content_desc_menu" />
+
+    <!-- Tab missing accessibilty info -->
+    <com.google.android.material.tabs.TabLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Tab with incomplete accessibilty info -->
+    <com.google.android.material.tabs.TabLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/content_desc_home_tab" />
+</LinearLayout>

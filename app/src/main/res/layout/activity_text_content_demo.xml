@@ -5,5 +5,5 @@
     android:layout_marginTop="72dp"
     android:gravity="center"
     android:padding="16dp"
-    android:text="@string/demo_coming_soon"
+    android:text="@string/language_checks"
     android:textSize="18sp" />

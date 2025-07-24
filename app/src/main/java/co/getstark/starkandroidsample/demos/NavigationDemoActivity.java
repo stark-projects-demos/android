@@ -1,13 +1,14 @@
 package co.getstark.starkandroidsample.demos;
 
 import android.os.Bundle;
+
 import co.getstark.starkandroidsample.R;
 
-public class CheckboxDemoActivity extends BaseDemoActivity {
+public class NavigationDemoActivity extends BaseDemoActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_placeholder_demo);
-        setTitle("Checkbox Demo - Accessibility Issues");
+        setContentView(R.layout.activity_navigation_demo);
+        setTitle("Activity");
     }
 }

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/small_text_low_contrast"
+        android:textSize="12sp"
+        android:textColor="#CCCCCC"
+        android:background="#FFFFFF"
+        android:layout_marginTop="64dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/large_text_low_contrast"
+        android:textSize="24sp"
+        android:textColor="#AAAAAA"
+        android:background="#FFFFFF"
+        android:layout_marginTop="24dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bold_text_low_contrast"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#AAAAAA"
+        android:background="#FFFFFF"
+        android:layout_marginTop="24dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_enter_text_contrast"
+        android:textSize="16sp"
+        android:textColor="#DDDDDD"
+        android:background="#FFFFFF"
+        android:layout_marginTop="24dp" />
+
+    <View
+        android:id="@+id/status_indicator"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="#FF0000"
+        android:layout_marginTop="24dp" />
+
+    <Button
+        android:id="@+id/toggle_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00FF00"
+        android:layout_marginTop="24dp" />
+
+    <TextView
+        android:id="@+id/link_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/visit_website"
+        android:textColor="#333333"
+        android:clickable="true"
+        android:autoLink="web"
+        android:layout_marginTop="24dp" />
+</LinearLayout>

@@ -1,13 +1,14 @@
 package co.getstark.starkandroidsample.demos;
 
 import android.os.Bundle;
+
 import co.getstark.starkandroidsample.R;
 
-public class ImageDemoActivity extends BaseDemoActivity {
+public class FormsDemoActivity extends BaseDemoActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_image_demo);
-        setTitle("Image Demo - Accessibility Issues");
+        setContentView(R.layout.activity_forms_demo);
+        setTitle("Form Labels and Validation - Accessibility Issues");
     }
 }

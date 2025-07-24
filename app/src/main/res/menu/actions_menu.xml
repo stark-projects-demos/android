@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_save"
+        android:title="Save" />
+    <item
+        android:id="@+id/action_delete"
+        android:title="Delete" />
+    <item
+        android:id="@+id/action_settings"
+        android:title="Settings" />
+
+    <!-- Clickable menu item missing state -->
+    <item
+        android:id="@+id/notifications"
+        android:title="Notifications"
+        android:checkable="true" />
+
+    <!-- Menu item missing submenu indication -->
+    <item
+        android:id="@+id/settings"
+        android:title="Settings">
+        <menu>
+            <item android:title="Privacy" />
+            <item android:title="Security" />
+        </menu>
+    </item>
+
+    <!-- Menu item with unclear role -->
+    <item
+        android:id="@+id/action_click"
+        android:title="Click" />
+</menu>
