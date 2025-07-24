@@ -11,7 +11,7 @@
         android:id="@+id/section_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Settings"
+        android:text="@string/settings"
         android:textStyle="bold"
         android:textSize="18sp" />
 
@@ -30,11 +30,11 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="John" />
+                android:text="@string/name_john" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Doe" />
+                android:text="@string/name_doe" />
         </TableRow>
 
     </TableLayout>
@@ -42,19 +42,19 @@
     <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:contentDescription="Employee table">
+        android:contentDescription="@string/content_desc_employee_table">
 
         <TableRow>
             <!-- Table header missing accessibilityHeading -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Name"
+                android:text="@string/column_name"
                 android:textStyle="bold" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Age"
+                android:text="@string/column_age"
                 android:textStyle="bold"
                 android:accessibilityHeading="true" />
         </TableRow>
@@ -63,13 +63,13 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="John Doe"
-                android:contentDescription="John Doe, Name column, Employee row"/>
+                android:text="@string/john_doe"
+                android:contentDescription="@string/content_desc_john_doe_cell"/>
             <!-- Table cell missing contentDescription that associates it with row and column headers -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="30" />
+                android:text="@string/age_30" />
         </TableRow>
 
         <!-- Empty table row -->
@@ -84,7 +84,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Valid Content" />
+                android:text="@string/valid_content" />
         </TableRow>
 
     </TableLayout>
@@ -97,7 +97,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Cell 1" />
+            android:text="@string/cell_1" />
 
     </GridLayout>
 
@@ -105,14 +105,14 @@
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:contentDescription="Employee table">
+        android:contentDescription="@string/content_desc_employee_table">
 
         <TableRow>
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Name"
-                android:contentDescription="Name column header"
+                android:text="@string/column_name"
+                android:contentDescription="@string/content_desc_column_header"
                 android:onClick="sortByName" />
         </TableRow>
     </TableLayout>

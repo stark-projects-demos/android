@@ -10,7 +10,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Username"
+        android:text="@string/username"
         android:visibility="gone" />
     <EditText
         android:layout_width="match_parent"
@@ -21,8 +21,8 @@
         android:id="@+id/editTextInvisibleLabel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter text here"
-        android:contentDescription="Your descriptive label for screen readers"
+        android:hint="@string/hint_enter_text"
+        android:contentDescription="@string/content_desc_screen_reader_label"
         android:inputType="text"
         android:layout_marginTop="16dp"/>
 
@@ -32,7 +32,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:hint="Your Visible Label">
+        android:hint="@string/hint_visible_label">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/editTextWithLabel"
@@ -59,13 +59,13 @@
         android:id="@+id/username2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:contentDescription="Enter your username" />
+        android:contentDescription="@string/content_desc_enter_username" />
 
     <!-- EditText missing input type -->
     <EditText xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter text" />
+        android:hint="@string/hint_enter_text_generic" />
 
     <!-- Checkbox group missing label; checkbox missing label; checkbox missing state -->
     <LinearLayout
@@ -81,7 +81,7 @@
         <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Burgers" />
+            android:text="@string/checkbox_burgers" />
 
     </LinearLayout>
 
@@ -90,18 +90,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:contentDescription="Select options">
+        android:contentDescription="@string/content_desc_select_options">
 
         <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Option"
+            android:text="@string/option"
             android:checked="false" />
 
         <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Option"
+            android:text="@string/option"
             android:checked="false" />
 
     </LinearLayout>
@@ -114,7 +114,7 @@
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Credit Card" />
+            android:text="@string/payment_credit_card" />
 
         <RadioButton
             android:layout_width="wrap_content"
@@ -127,7 +127,7 @@
     <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:contentDescription="Select payment method"
+        android:contentDescription="@string/content_desc_select_payment_method"
         tools:ignore="UselessLeaf">
 
     </RadioGroup>
@@ -140,13 +140,13 @@
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Credit Card"
+            android:text="@string/payment_credit_card"
             android:checked="true" />
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Credit Card"
+            android:text="@string/payment_credit_card"
             android:checked="false" />
 
     </RadioGroup>
@@ -155,7 +155,7 @@
     <RadioButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Credit Card"
+        android:text="@string/payment_credit_card"
         android:checked="false" />
 
     <!-- Spinner/picker control not programmatically associated with its visible label -->
@@ -170,14 +170,14 @@
         android:id="@+id/country2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:contentDescription="Select your country"
+        android:contentDescription="@string/content_desc_select_country"
         android:entries="@array/countries" />
 
     <!-- Email field missing context -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Contact"
+        android:text="@string/label_contact"
         android:labelFor="@+id/contact" />
 
     <EditText
@@ -190,7 +190,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Value"
+        android:text="@string/label_value"
         android:labelFor="@+id/value" />
 
     <EditText
@@ -206,7 +206,7 @@
         android:layout_height="wrap_content"
         android:autofillHints=""
         android:inputType="textPassword"
-        android:hint="Enter your password"
+        android:hint="@string/hint_enter_password"
         tools:ignore="TextFieldMissingVisibleLabelAssociation" />
 
 </LinearLayout>

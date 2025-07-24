@@ -21,7 +21,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_home_black_24dp"
-        android:contentDescription="Overflow" />
+        android:contentDescription="@string/content_desc_overflow" />
 
     <!-- Menu button with unclear purpose -->
     <ImageButton xmlns:android="http://schemas.android.com/apk/res/android"
@@ -29,7 +29,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_home_black_24dp"
-        android:contentDescription="Menu" />
+        android:contentDescription="@string/content_desc_menu" />
 
     <!-- Tab missing accessibilty info -->
     <com.google.android.material.tabs.TabLayout
@@ -42,5 +42,5 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:contentDescription="Home tab" />
+        android:contentDescription="@string/content_desc_home_tab" />
 </LinearLayout>

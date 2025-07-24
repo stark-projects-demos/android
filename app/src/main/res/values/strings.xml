@@ -8,4 +8,94 @@
     <string name="button_ok">OK</string>
     <string name="button_cancel">Cancel</string>
     <string name="back_button">Back to Demo List</string>
+    
+    <!-- Form Demo Strings -->
+    <string name="username">Username</string>
+    <string name="hint_enter_text">Enter text here</string>
+    <string name="content_desc_screen_reader_label">Your descriptive label for screen readers</string>
+    <string name="hint_visible_label">Your Visible Label</string>
+    <string name="content_desc_enter_username">Enter your username</string>
+    <string name="hint_enter_text_generic">Enter text</string>
+    <string name="checkbox_burgers">Burgers</string>
+    <string name="option">Option</string>
+    <string name="content_desc_select_options">Select options</string>
+    <string name="payment_credit_card">Credit Card</string>
+    <string name="content_desc_select_payment_method">Select payment method</string>
+    <string name="content_desc_select_country">Select your country</string>
+    <string name="label_contact">Contact</string>
+    <string name="label_value">Value</string>
+    <string name="hint_enter_password">Enter your password</string>
+    
+    <!-- Semantics Demo Strings -->
+    <string name="settings">Settings</string>
+    <string name="name_john">John</string>
+    <string name="name_doe">Doe</string>
+    <string name="column_name">Name</string>
+    <string name="column_age">Age</string>
+    <string name="john_doe">John Doe</string>
+    <string name="age_30">30</string>
+    <string name="valid_content">Valid Content</string>
+    <string name="cell_1">Cell 1</string>
+    <string name="content_desc_employee_table">Employee table</string>
+    <string name="content_desc_john_doe_cell">John Doe, Name column, Employee row</string>
+    <string name="content_desc_column_header">Name column header</string>
+    
+    <!-- UI Controls Demo Strings -->
+    <string name="content_desc_toggle">toggle</string>
+    <string name="content_desc_delete_item">Delete item</string>
+    
+    <!-- Color Contrast Demo Strings -->
+    <string name="hint_enter_text_contrast">Enter text</string>
+    
+    <!-- Navigation Demo Strings -->
+    <string name="content_desc_home_tab">Home tab</string>
+    
+    <!-- Images Demo Strings -->
+    <string name="content_desc_background_pattern">Background pattern</string>
+    
+    <!-- Menus Demo Strings -->
+    <string name="content_desc_overflow">Overflow</string>
+    <string name="content_desc_menu">Menu</string>
+    
+    <!-- Placeholder Demo Strings -->
+    <string name="demo_coming_soon">Demo Coming Soon\n\nThis demo will showcase accessibility issues with this specific control type.</string>
+    
+    <!-- UI Controls Demo Strings -->
+    <string name="toggle">toggle</string>
+    <string name="click_here">Click here</string>
+    <string name="visit_website">Visit our website</string>
+    <string name="example_url">https://www.example.com</string>
+    
+    <!-- Color Contrast Demo Strings -->
+    <string name="small_text_low_contrast">Small text with low contrast</string>
+    <string name="large_text_low_contrast">Large text with low contrast</string>
+    <string name="bold_text_low_contrast">Bold text with low contrast</string>
+    
+    <!-- Device Orientation Demo Strings -->
+    <string name="device_orientation_demo">Demo - Coming Soon\n\nDemo controls with accessibility issues will appear here.</string>
+    
+    <!-- Text Content Demo Strings -->
+    <string name="language_checks">Language checks\n\nThese checks can\'t be shown easily with UI. Instead you\'ll find them in files like res/values/strings.xml and res/xml files missing</string>
+    
+    <!-- Notifications Demo Strings -->
+    <string name="show_alert">Show Alert</string>
+    
+    <!-- Misc Demo Strings -->
+    <string name="misc_demo">Demo - Coming Soon\n\nDemo controls with accessibility issues will appear here.</string>
+    
+    <!-- Teamsync Demo Strings -->
+    <string name="button_accessibility_description">This screen demonstrates common button accessibility issues. Try using TalkBack to navigate these buttons and notice the problems.</string>
+    <string name="missing_accessibility_info">1. MISSING ACCESSIBILITY INFORMATION</string>
+    <string name="button_no_accessibility_text">Button with no accessibility text:</string>
+    <string name="question_mark">?</string>
+    <string name="icon_only_button_no_desc">Icon-only button (no content description):</string>
+    <string name="visual_accessibility_issues">2. VISUAL ACCESSIBILITY ISSUES</string>
+    <string name="button_poor_contrast">Button with poor color contrast:</string>
+    <string name="hard_to_read">Hard to Read</string>
+    <string name="button_touch_target_small">Button with touch target too small (less than 48dp):</string>
+    
+    <!-- Custom Elements Demo Strings -->
+    <string name="accordion_title">Accordion Title</string>
+    <string name="accordion_content">This is the detailed content of the accordion item.</string>
+    <string name="content_desc_product_rating">Product rating</string>
 </resources>

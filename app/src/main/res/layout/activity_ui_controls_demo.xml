@@ -18,19 +18,19 @@
         <ToggleButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:contentDescription="toggle"
+            android:contentDescription="@string/content_desc_toggle"
             android:checked="false" />
 
         <ToggleButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="toggle" />
+            android:text="@string/toggle" />
 
         <TextView
             android:id="@+id/link"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Click here"
+            android:text="@string/click_here"
             android:autoLink="web" />
 
         <ProgressBar
@@ -75,20 +75,20 @@
             android:layout_height="48dp"
             android:src="@drawable/ic_home_black_24dp"
             android:clickable="true"
-            android:contentDescription="Delete item" />
+            android:contentDescription="@string/content_desc_delete_item" />
 
         <TextView
             android:id="@+id/link_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Visit our website"
+            android:text="@string/visit_website"
             android:clickable="true"
             android:autoLink="web" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="https://www.example.com"
+            android:text="@string/example_url"
             android:autoLink="web" />
 
         <Spinner

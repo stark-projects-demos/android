@@ -21,7 +21,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:accessibilityHeading="true"
-            android:text="Accordion Title"
+            android:text="@string/accordion_title"
             android:textColor="@android:color/black"
             android:textSize="16sp" />
 
@@ -41,7 +41,7 @@
         android:paddingStart="16dp"
         android:paddingEnd="16dp"
         android:paddingBottom="16dp"
-        android:text="This is the detailed content of the accordion item."
+        android:text="@string/accordion_content"
         android:textColor="@android:color/darker_gray"
         android:visibility="gone" />
 
@@ -56,13 +56,13 @@
     <RatingBar
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:contentDescription="Product rating"
+        android:contentDescription="@string/content_desc_product_rating"
         android:numStars="5" />
 
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:contentDescription="Employee table">
+        android:contentDescription="@string/content_desc_employee_table">
 
         <TableRow
             android:layout_width="match_parent"
@@ -72,7 +72,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="sortByName"
-                android:text="Name" />
+                android:text="@string/column_name" />
 
         </TableRow>
 
@@ -82,7 +82,7 @@
 
             <TextView
                 android:padding="3dip"
-                android:text="John Doe" />
+                android:text="@string/john_doe" />
 
         </TableRow>
     </TableLayout>
@@ -95,11 +95,11 @@
     <ToggleButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:contentDescription="toggle"
+        android:contentDescription="@string/content_desc_toggle"
         android:checked="false" />
 
     <ToggleButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="toggle" />
+        android:text="@string/toggle" />
 </LinearLayout>

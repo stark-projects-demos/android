@@ -8,7 +8,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Small text with low contrast"
+        android:text="@string/small_text_low_contrast"
         android:textSize="12sp"
         android:textColor="#CCCCCC"
         android:background="#FFFFFF"
@@ -17,7 +17,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Large text with low contrast"
+        android:text="@string/large_text_low_contrast"
         android:textSize="24sp"
         android:textColor="#AAAAAA"
         android:background="#FFFFFF"
@@ -26,7 +26,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Bold text with low contrast"
+        android:text="@string/bold_text_low_contrast"
         android:textSize="20sp"
         android:textStyle="bold"
         android:textColor="#AAAAAA"
@@ -36,7 +36,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter text"
+        android:hint="@string/hint_enter_text_contrast"
         android:textSize="16sp"
         android:textColor="#DDDDDD"
         android:background="#FFFFFF"
@@ -60,7 +60,7 @@
         android:id="@+id/link_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Visit our website"
+        android:text="@string/visit_website"
         android:textColor="#333333"
         android:clickable="true"
         android:autoLink="web"
