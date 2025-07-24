@@ -15,7 +15,6 @@ android:padding="16dp">
         android:id="@+id/button_alert"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="showAlert"
         android:text="Show Alert" />
 </LinearLayout>
 </ScrollView>
