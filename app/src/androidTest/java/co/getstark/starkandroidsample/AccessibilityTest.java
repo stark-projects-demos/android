@@ -42,7 +42,7 @@ public class AccessibilityTest {
         try (ActivityScenario<T> scenario = ActivityScenario.launch(activityClass)) {
             scenario.onActivity(activity -> {
                 View rootView = activity.getWindow().getDecorView().getRootView();
-                AccessibilityChecker checker = new AccessibilityChecker("stark_35ce3f1160b8406fa192171ab1680839");
+                AccessibilityChecker checker = new AccessibilityChecker("stark_••••••••••••••••••••••••••••••••");
                 CompletableFuture<List<StarkAccessibilityCheckResult>> resultsFuture = checker
                         .runStandardChecks(rootView, scanName);
                 try {
