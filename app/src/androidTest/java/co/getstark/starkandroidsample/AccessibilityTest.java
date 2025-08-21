@@ -1,10 +1,5 @@
 package co.getstark.starkandroidsample;
 
-import static androidx.test.espresso.Espresso.onView;
-import static androidx.test.espresso.assertion.ViewAssertions.matches;
-import static androidx.test.espresso.matcher.ViewMatchers.isDisplayed;
-import static androidx.test.espresso.matcher.ViewMatchers.isRoot;
-
 import android.app.Activity;
 import android.view.View;
 
