@@ -1,10 +1,5 @@
 package co.getstark.starkandroidsample;
 
-import static androidx.test.espresso.Espresso.onView;
-import static androidx.test.espresso.assertion.ViewAssertions.matches;
-import static androidx.test.espresso.matcher.ViewMatchers.isDisplayed;
-import static androidx.test.espresso.matcher.ViewMatchers.isRoot;
-
 import android.view.View;
 
 import androidx.test.core.app.ActivityScenario;
@@ -13,7 +8,12 @@ import androidx.test.ext.junit.runners.AndroidJUnit4;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
+import java.util.List;
+import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.ExecutionException;
 import co.getstark.accessibility.instrumentation.AccessibilityChecker;
+import co.getstark.accessibility.instrumentation.StarkAccessibilityCheckResult;
+
 
 /**
  * Instrumented test, which will execute on an Android device.
@@ -27,8 +27,13 @@ public class AccessibilityTest {
         try (ActivityScenario<MainActivity> scenario = ActivityScenario.launch(MainActivity.class)) {
             scenario.onActivity(activity -> {
                 View rootView = activity.getWindow().getDecorView().getRootView();
-                AccessibilityChecker checker = new AccessibilityChecker("stark_••••••••••••••••••••••••••••••••");
-                checker.runStandardChecks(rootView, "MainActivity");
+                AccessibilityChecker checker = new AccessibilityChecker("stark_d65a79f636724e4184f3234c0957367a");
+                CompletableFuture<List<StarkAccessibilityCheckResult>> resultsFuture = checker.runStandardChecks(rootView, "MainActivity");
+                try {
+                    resultsFuture.get();
+                } catch (Exception e) {
+                    throw new RuntimeException(e);
+                }
             });
         }
     }

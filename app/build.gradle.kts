@@ -1,6 +1,6 @@
 plugins {
     alias(libs.plugins.android.application)
-    id("co.getstark.accessibility") version "0.0.1"
+    id("co.getstark.accessibility") version "1.0.1"
 }
 
 android {
